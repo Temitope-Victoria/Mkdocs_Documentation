@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>User Guide - MkDocs</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">MkDocs</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">User Guide</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../about/">About</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="..">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../about/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#preparing-documentation-with-mkdocs">Preparing Documentation with Mkdocs</a></li>
+            <li class="second-level"><a href="#creating-a-new-project">Creating a new Project</a></li>
+                
+            <li class="second-level"><a href="#adding-files-and-pages">Adding Files and Pages</a></li>
+                
+            <li class="second-level"><a href="#customize-theme">Customize Theme</a></li>
+                
+            <li class="second-level"><a href="#build-the-site">Build the Site</a></li>
+                
+            <li class="second-level"><a href="#deploy-the-docs">Deploy the Docs</a></li>
+                
+            <li class="second-level"><a href="#conclusion">Conclusion</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="preparing-documentation-with-mkdocs"><strong>Preparing Documentation with Mkdocs</strong></h1>
+<h2 id="creating-a-new-project"><strong>Creating a new Project</strong></h2>
+<p>Now that Mkdocs is installed, let's start by creating a documentation
+site with Mkdocs.</p>
+<ol>
+<li>
+<p>Choose a project directory on your local PC to save the project.</p>
+</li>
+<li>
+<p>Create a new project by running the following commands:</p>
+</li>
+</ol>
+<pre><code> mkdocs new my-project
+</code></pre>
+<blockquote>
+<p><img alt="Mkdocs NewProject" src="../images/mkdocs_newproject.png" /></p>
+</blockquote>
+<p>3.<strong>File and Folder structure</strong>. Creating a new project will create a  new folder. The new folder called 'my-project' and it gets the  default folder structure with 'docs' folder and mkdocs.yml file. The Documentation source file will be in Markdown. The docs folder has a markdown file named 'index.md' which can be renamed. The project folder will also have a Single configuration file called mkdocs.yml. The YML file is used to add pages, and themes. It is also used to configure the project settings.</p>
+<p>The folder structure is in this format.</p>
+<blockquote>
+<pre><code>mkdocs.yml
+docs/
+index.md
+</code></pre>
+</blockquote>
+<p>4.Open the project in VSCode. Open it on an editor with Visual Studio code using the command in the below line.</p>
+<blockquote>
+<p>code .</p>
+<p><img alt="VSCode Page" src="../images/yamlpage.png" /></p>
+</blockquote>
+<p>5.Load the site on your local PC on the web browser. Mkdocs has a dev server to load and preview the site. To load the site, the command prompt will need to run from the directory of the project. Run the command in the below line:</p>
+<blockquote>
+<pre><code>cd my-project
+mkdocs serve
+</code></pre>
+</blockquote>
+<p><img alt="Mkdocs Serve" src="../images/mkdocs_serve.png" /></p>
+<p>6.View the site on a web browser. Copy the link - <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> and paste it into a browser of your choice. This would load the default home page.</p>
+<blockquote>
+<p><img alt="Mkdocs Site" src="../images/mkdocs_site.png" /></p>
+</blockquote>
+<h2 id="adding-files-and-pages"><strong>Adding Files and Pages</strong></h2>
+<p>You have successfully created a new project. Project documentation usually have more than one page. To add more pages to your documentation, open the mkdocs.yml file. At first glance, it looks like this:</p>
+<p><code>site_name: My Docs</code></p>
+<p>The About Page, User Guide, and Developer Guide Pages can be added.</p>
+<p>This involves two steps.</p>
+<ol>
+<li>Create the files in VS Code</li>
+</ol>
+<blockquote>
+<p><img alt="YAML FILE" src="../images/yaml.png" /></p>
+</blockquote>
+<p>2.Add the Pages information in the mkdocs.yml file. To prevent any errors, confirm that the new files are created in the docs folder.</p>
+<p>Now you have the files in mkdocs.yml.</p>
+<pre><code>site_name: My Docs
+
+Nav:
+-Home: index.md
+-About: about.md
+-User Guide: userguide.md
+-Developer Guide: developerguide.md
+</code></pre>
+<blockquote>
+<p><img alt="YAML FILE" src="../images/addpages.png" /></p>
+</blockquote>
+<p>3.Reload the site using 'mkdocs serve' to confirm that the changes are showing.</p>
+<blockquote>
+<p><img alt="MKDOCS PAGES" src="../images/mkdocs_addedpages.png" /></p>
+</blockquote>
+<p>4.Subsections within pages can be created. The code below highlights creating subsections.</p>
+<blockquote>
+<pre><code>nav:
+- Home: 'index.md'
+- User Guide:
+    - Writing your docs: 'writing-your-docs.md'
+    - Styling your docs: 'styling-your-docs.md'
+- About:
+    - License: 'license.md'
+    - Release Notes: 'release-notes.md'
+</code></pre>
+<p><img alt="MKDOCS SITES" src="../images/mkdocs_subsections.png" /></p>
+<p><img alt="MKDOCS SITES" src="../images/mkdocs_subsections2.png" /></p>
+</blockquote>
+<h2 id="customize-theme"><strong>Customize Theme</strong></h2>
+<p>Themes can be easily customized on Mkdocs. Mkdocs has its default basic theme. However, themes can be changed and customized.</p>
+<p>Mkdocs themes can be accessed from the <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">GitHub MkDocs Theme Page</a> and the <a href="https://github.com/mkdocs/catalog#-theming">Catalog Themes</a>. These are some of the themes that can be used.</p>
+<ol>
+<li>
+<p>Read the Docs. Add the command "theme: readthedocs" to mkdocs.yml and it shows the documentation in readthedocs format.</p>
+</li>
+<li>
+<p>Material for Mkdocs: This makes searching the documentation easy as well as creating beautiful and professional documentation. Apply it to your documentation using the <a href="https://squidfunk.github.io/mkdocs-material/">Material for Mkdocs Page</a>.</p>
+</li>
+<li>
+<p>Cinder - This is another beautiful theme that can be applied to the documentation. A step-by-step process to apply the theme is highlighted in the <a href="https://sourcefoundry.org/cinder/">Cinder Theme for Mkdocs</a>.</p>
+</li>
+</ol>
+<h2 id="build-the-site"><strong>Build the Site</strong></h2>
+<p>Building the site will create a 'site' folder within the local computer containing the files. This site folder makes it easy to deploy the documentation to any site of your choice.</p>
+<p>To build the site, run the below command.</p>
+<pre><code>mkdocs build
+</code></pre>
+<blockquote>
+<p><img alt="MKDOCS SITES" src="../images/mkdocs_build.png" /></p>
+</blockquote>
+<h2 id="deploy-the-docs"><strong>Deploy the Docs</strong></h2>
+<p>The documentation site you just made is made up of only static files, so
+you can run it from just about anywhere. Just upload the whole site
+directory to the place where your website is hosted, and you\'re done.</p>
+<p>Docs can be deployed to anywhere. <a href="https://pages.github.com/">GitHub Pages</a>, Read the Docs, or your site. For more information, see <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">Deploying the Docs Page</a>.</p>
+<p>To deploy to GitHub Pages, publish and push the local file to a repository on GitHub. Open the repository, go to Settings and Pages. This shows the GitHub Pages settings. Select the branch to deploy from and save. Within a few minutes, a link will be generated. Copy the link and paste it in a new tab. The documentation is successfully hosted on GitHub Pages.</p>
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>Congratulations! You have successfully built a documentation site. In summary, MkDocs is a powerful tool for creating and updating documentation for open-source projects. By following these steps, you can create visually appealing and relevant documentation for projects.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
